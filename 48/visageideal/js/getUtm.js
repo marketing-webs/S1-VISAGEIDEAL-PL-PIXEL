@@ -6,20 +6,20 @@ let localLinks;
 
 links.forEach((item) => {
   if (item.classList.contains("footer__links-PP")) {
-    PP_Link.href = "./policy";
+    PP_Link.href = "./docs/POLITYKA_PRYWATNOSCI.pdf";
     return;
   }
-  item.href = `https://europe-top-offers.com/48/pumpkinseedpro/`;
+  item.href = `https://beneficial-force.com/48/visageideal/`;
 });
 
 if (utm != "") {
   localStorage.setItem("userDataLinks", JSON.stringify(utm));
   links.forEach((item) => {
     if (item.classList.contains("footer__links-PP")) {
-      PP_Link.href = "./policy";
+      PP_Link.href = "./docs/POLITYKA_PRYWATNOSCI.pdf";
       return;
     }
-    item.href = `https://europe-top-offers.com/48/pumpkinseedpro${utm
+    item.href = `https://beneficial-force.com/48/visageideal${utm
       .split('"')
       .join("")}`;
   });
@@ -27,16 +27,14 @@ if (utm != "") {
   localLinks = localStorage.getItem("userDataLinks");
   links.forEach((item) => {
     if (item.classList.contains("footer__links-PP")) {
-      PP_Link.href = "./policy";
+      PP_Link.href = "./docs/POLITYKA_PRYWATNOSCI.pdf";
       return;
     }
-    item.href = `https://europe-top-offers.com/48/pumpkinseedpro${localLinks
+    item.href = `https://beneficial-force.com/48/visageideal${localLinks
       .split('"')
       .join("")}`;
   });
 }
-
-console.log(localLinks);
 
 var url2 = self.location.href;
 var p = url2.indexOf("?");
