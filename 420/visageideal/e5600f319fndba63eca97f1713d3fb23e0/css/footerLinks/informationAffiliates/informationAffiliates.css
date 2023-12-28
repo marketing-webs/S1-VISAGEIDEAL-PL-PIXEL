@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.information_for_affiliates {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #b8b8b8;
+  font-family: 'Roboto';
+}
+.information_for_affiliates .wrapper {
+  max-width: 480px;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ebebeb;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  padding: 20px;
+}
+.information_for_affiliates .wrapper h1 {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+.information_for_affiliates .wrapper p {
+  font-weight: 500;
+  margin: 10px 0;
+}
+.information_for_affiliates .wrapper form {
+  border-top: 1px solid #000;
+  margin: 20px 0 0;
+  padding: 20px 0 0;
+}
+.information_for_affiliates .wrapper form div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 10px;
+}
+.information_for_affiliates .wrapper form div label {
+  font-weight: 500;
+  margin: 0 0 2px;
+}
+.information_for_affiliates .wrapper form div img {
+  max-width: 250px;
+  width: 100%;
+  height: 70px;
+  margin: 5px 0 10px;
+  padding: 0 5px;
+  border: 1px solid #b8b8b8;
+  background-color: #fff;
+}
+.information_for_affiliates .wrapper form div input {
+  width: 100%;
+  height: 24px;
+  padding: 0 5px;
+  border: 1px solid #b8b8b8;
+}
+.information_for_affiliates .wrapper form div textarea {
+  width: 100%;
+  height: 66px;
+  padding: 5px;
+  border: 1px solid #b8b8b8;
+  resize: none;
+}
+.information_for_affiliates .wrapper form div p {
+  padding: 3px 5px;
+  margin: 3px 0 0;
+  font-size: 12px;
+  font-weight: 700;
+  display: none;
+  color: #ffffff;
+}
+.information_for_affiliates .wrapper form div p.error.empty,
+.information_for_affiliates .wrapper form div p.error.invalid {
+  background-color: #9a031e;
+}
+.information_for_affiliates .wrapper form div p.error.valid {
+  background-color: #004d0e;
+}
+.information_for_affiliates .wrapper form div p.error.active {
+  display: block;
+}
+.information_for_affiliates .wrapper form div.empty input,
+.information_for_affiliates .wrapper form div.invalid input,
+.information_for_affiliates .wrapper form div.empty textarea,
+.information_for_affiliates .wrapper form div.invalid textarea {
+  border-color: #9a031e;
+  background-color: rgba(154, 3, 30, 0.2);
+}
+.information_for_affiliates .wrapper form div.valid input,
+.information_for_affiliates .wrapper form div.valid textarea {
+  border-color: #004d0e;
+  background-color: rgba(0, 77, 14, 0.2);
+}
+.information_for_affiliates .wrapper form button {
+  width: 100%;
+  height: 42px;
+  background-color: #b8b8b8;
+  border: 1px solid #000;
+  margin: 10px 0 0;
+  cursor: pointer;
+}
+.information_for_affiliates .wrapper .notification {
+  margin: 20px 0 0;
+  padding: 20px 5px;
+  border: 1px solid #b8b8b8;
+}
+/*# sourceMappingURL=informationAffiliates.css.map */
